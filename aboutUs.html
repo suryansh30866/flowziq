@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa, #e3e6e8);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            background-color: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .team {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .team h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #7091E6;
+        }
+
+        .team p {
+            font-size: 18px;
+            margin: 5px 0;
+            color: #666;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Floating Background Animation */
+        .floating-circles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .circle {
+            position: absolute;
+            background-color: rgba(112, 145, 230, 0.15);
+            border-radius: 50%;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        .circle:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            left: 20%;
+            animation-duration: 12s;
+        }
+
+        .circle:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            left: 60%;
+            animation-duration: 15s;
+        }
+
+        .circle:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            left: 80%;
+            animation-duration: 18s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-40px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <div class="container">
+        <h1>About Us</h1>
+        <p>
+            At the core of everything we do is a passion for excellence. We are not just a brand; we are a journey of 
+            continuous improvement, driven by a commitment to deliver solutions that inspire, empower, and make a difference.
+        </p>
+        <p>
+            Innovation is in our DNA, and integrity guides every step of our journey. We believe in building experiences 
+            that foster trust, resonate with creativity, and leave a lasting positive impact. With you, we aspire to make the 
+            extraordinary a part of everyday life.
+        </p>
+
+        <div class="team">
+            <h2>Our Leadership</h2>
+            <p>CEO: Shami</p>
+            <p>CTO: Suryansh</p>
+            <p>CIO: Tarq</p>
+        </div>
+
+        <footer>
+            © 2024. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
